@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "erplasticityexpression"
+version = "0.0.0"
+description = "ERPlasticityExpression project"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [ { name = "Your Name", email = "you@example.com" } ]
+dependencies = []
