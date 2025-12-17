@@ -3,10 +3,31 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "erplasticityexpression"
+name = "er_plasticity_expression"
 version = "0.0.0"
 description = "ERPlasticityExpression project"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [ { name = "Your Name", email = "you@example.com" } ]
-dependencies = []
+requires-python = ">=3.8"
+dependencies = [
+    "sessiontools @ git+https://github.com/yfisher-lab/SessionTools.git",
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "nbdime",
+    "ipykernel",
+    "ipywidgets",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
