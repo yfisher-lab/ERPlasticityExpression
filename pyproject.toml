@@ -20,6 +20,9 @@ dependencies = [
     "nbdime",
     "ipykernel",
     "ipywidgets",
+    "dask",
+    "pyarrow",
+
 ]
 
 [project.optional-dependencies]
